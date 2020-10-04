@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js" 
+      integrity="sha512-AcZyhRP/tbAEsXCCGlziPun5iFvcSUpEz2jKkx0blkYKbxU81F+iq8FURwPn1sYFeksJ+sDDrI5XujsqSobWdQ==" 
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <script>
+      var socket = io('ws://localhost:3000');
+
+      socket.on('ping', data => {
+        console.log(data)
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+@font-face { font-family: 'TmoneyRoundWindExtraBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'TmoneyRoundWindExtraBold';
+}
+li {
+  list-style-type: none;
+}
+button, input {
+  border-radius: 5px;
+  border: 0;
+  background: #e8e8e8
+}
+button:hover {
+  cursor: pointer;
+}
+
+#channel .info {
+  text-align: center;
+}
+#channel .info h1 {
+  font-size: 24px;
+}
+#channel .ch {
+  display: flex;
+  /* width: 100%; */
+  /* flex-direction: row; */
+  /* flex: none; */
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+#channel .ch-item {
+  background-color: #123123;
+  color: white;
+  /* width: 49%; */
+  border-radius: 5px;
+  text-align: center;
+  padding: 12px; 
+  flex: 1 1 40%;
+  padding: 40px;
+  margin: 10px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+#channel .ch-item:hover {
+  opacity: 1;
+}
+#channel .enter {
+  padding: 10px;
+  width: 100%;
+}
+#channel .enter input {
+  width: 69%;
+  height: 36px;
+  padding-left: 5px;
+}
+#channel .enter button {
+  width: 29%;
+  height: 36px;
+  text-align: center;
+  opacity: 0.7;
+}
+#channel .enter button:hover {
+  opacity: 1;
+}
+
+#game {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#game-board {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 33%;
+}
+#game-board button.upgrade {
+  width: 108px;
+  height: 36px;
+  margin: 10px;
+}
+#game-chat button.register,
+#game-board button.register {
+  height: 36px;
+  width: 108px;
+  margin: 10px;
+}
+
+#game-board, #game-rank, #game-chat {
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+#game-chat input.chat-msg {
+  height: 36px;
+  padding-left: 12px;
+}
+
+.up {
+  color: red;
+}
+.down {
+  color: blue;
+}
